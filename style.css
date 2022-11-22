@@ -24,11 +24,11 @@ body::-webkit-scrollbar-thumb {
 body{
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     overflow-x: hidden;
 }
 p{
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 .section{
     padding-block: 2rem;
@@ -85,8 +85,7 @@ p{
     font-weight:bolder;
 }
 .stars{
-    display: flex;
-    justify-self: center;
+    text-align: center;
 }
 .stars .fa{
     color: rgb(255, 157, 0);
