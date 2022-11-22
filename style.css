@@ -46,6 +46,9 @@ p{
     
 }
 
+.footer , .fa , .fas{
+    font-size: 1.5rem;
+}
 .footer li{
     list-style: none;
 }
@@ -57,7 +60,7 @@ p{
 /* testimonials and features */
 
 .card.rating{
-    height: 12rem;
+    height: max-content;
 }
 
 .section.testimonial-features{
@@ -153,10 +156,10 @@ title{
 }
 
 .testimonial-features .testimonials{
-    background-image: url(./images/quote-left-solid.svg) , url(./images/quote-right-solid.svg);
+    background-image: url(./images/icons/quote-right-solid.png) , url(./images/icons/quote-left-solid.png);
     background-repeat: no-repeat no-repeat;
-    background-position: top left,bottom right;
-    background-size: 2rem;
+    background-position: 5% 5%,95% 95%;
+    background-size: 1.5rem;
 }
 
 
@@ -240,7 +243,7 @@ title{
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .grid.wrapper a{
@@ -322,7 +325,7 @@ title{
 
 
 .grid.wrapper .grid-item:nth-child(1) {
-    height: 20rem;
+    height: 17rem;
     background-image: linear-gradient(to bottom, transparent, black),url(./images/germany.jpg);
     grid-area: 1 / 1 / 2 / 2; 
 }
@@ -457,4 +460,51 @@ title{
     .rental-cars .tab-title{
         text-align: center;
     }
+}
+
+/* testimonial-carousel */
+.testimonials.card{
+    height:fit-content;
+    padding: 3rem;
+    padding-bottom: 4rem;
+}
+
+.testimonials.card .carousel{
+   height: fit-content;
+}
+.carousel-control-prev-icon , .carousel-control-next-icon{
+    background: none;
+}
+.carousel-control-prev{
+   left: -3rem;
+}
+
+.carousel-control-next{
+    right: -3rem;
+ }
+ 
+.testimonials .carousel-item .title{
+    font-weight: 600;
+}
+
+.testimonials .carousel-item .name{
+    font-style: italic;
+}
+.testimonials .fa-solid{
+    color: var(--main-color);
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.carousel-indicators{
+    top: 95%;
+}
+.carousel-indicators .active{
+    background-color: var(--main-color);
+}
+
+.carousel-indicators button:not(.active){
+    background-color: var(--main-color-light);
 }
